@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    max-width: 80%;
+    width: auto;
+}
+
+td {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.street {
+    background-color: white; /* Cor das ruas */
+}
+
+.building {
+    background-color: grey; /* Cor das construções */
+    pointer-events: none; /* Impede que as construções sejam clicadas */
+}
+
+#message {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#reset-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.traffic-jam {
+    background-image: url('./img/engarrafamento.png');
+    background-size: cover; /* A imagem se ajustará ao tamanho da div */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    pointer-events: none; /* Impede que os engarrafamentos sejam clicados */
+}
