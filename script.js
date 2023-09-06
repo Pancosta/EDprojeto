@@ -7,7 +7,7 @@ const columns = 40;
 
 // Matriz representando a estrutura da cidade (0 para construção, 1 para rua)
 
-const cidade = 1;
+const cidade = 4;
 let cityLayout;
 
 if (cidade == 1) {
@@ -33,6 +33,14 @@ if (cidade == 1) {
         [1, 0, 0, 0, 1, 1, 1],
         [1, 0, 0, 0, 1, 0, 0],
         [1, 1, 1, 1, 1, 0, 0],
+    ];
+} else if (cidade == 4) {
+    cityLayout = [
+        [1, 0, 1, 1, 1, 0, 0],
+        [1, 0, 1, 0, 1, 0, 0],
+        [1, 0, 1, 0, 1, 1, 1],
+        [1, 1, 1, 0, 1, 0, 0],
+        [0, 0, 1, 0, 1, 0, 0],
     ];
 }
 
